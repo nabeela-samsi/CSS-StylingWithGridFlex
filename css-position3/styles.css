@@ -1,3 +1,18 @@
 body {
   background: white;
 }
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  background-color: rgb(126, 27, 182);
+  color: white;
+  border: 2px solid  white;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 5px 10px rgb(220, 197, 233);
+}
