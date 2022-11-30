@@ -1,3 +1,73 @@
 body {
   background: white;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "item1 item3 item3 item4 item5"
+    "item2 item3 item3 item4 item5";
+}
+
+.item1 {
+  background-color: rgb(196, 21, 196);
+  grid-area: item1;
+  display: flex;
+  justify-content: center;
+}
+
+.item2 {
+  background-color: rgb(249, 46, 5);
+  grid-area: item2;
+  display: flex;
+  justify-content: center;
+}
+
+.item3 {
+  background-color: rgb(133, 228, 32);
+  grid-area: item3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item4 {
+  background-color: rgb(13, 195, 241);
+  grid-area: item4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item5 {
+  background-color: rgb(232, 14, 123);
+  grid-area: item5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
+
+.diamond {
+  height: 20px;
+  width: 20px;
+  transform: rotate(45deg);
+  background-color: white;
+}
+
+p {
+  transform: rotate(-45deg);
+
 }
