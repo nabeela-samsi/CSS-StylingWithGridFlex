@@ -2,27 +2,52 @@ body {
   margin: 0;
   padding: 10em;
   background-color: white;
+  text-align: center;
 }
 
 .container1 {
   background-color: black;
   padding: 3em;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". . li1 . ."
+    ". li2 li2 li2 ."
+    "li3 li3 li3 li3 li3";
 }
 
-.container1 :nth-child(1) {
-  background-color: rgb(136, 246, 111);
+.container0 {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
-.container1 :nth-child(2) {
+.container1 div:nth-child(1) {
+  background-color: rgb(154, 244, 134);
+  grid-area: li1;
+}
+
+.container1 div:nth-child(2) {
   background-color: rgb(86, 213, 60);
+  grid-area: li2;
 }
 
-.container1 :nth-child(3) {
+.container1 div:nth-child(3) {
   background-color: rgb(42, 144, 22);
+  grid-area: li3;
 }
 
 .container2 {
   background-image: url("avatar.png");
   height: 10em;
   width: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(50%);
+
 }

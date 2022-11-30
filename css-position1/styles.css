@@ -1,8 +1,11 @@
 body {
   background: white;
+  display: flex;
 }
 
 .container {
   background-color: bisque;
-  height: 30em; /* vh vw em rem */
+  height: 40em; /* vh vw em rem */
+  display: flex;
+  align-items: center;
 }
